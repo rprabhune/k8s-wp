@@ -39,4 +39,6 @@ spec:
   ports:
     - port: 80
       targetPort: 80
-  type: LoadBalancer  # Expose WordPress externally
+      nodePort: 30400  # Expose WordPress on port 30400
+  type: NodePort  # Use NodePort instead of LoadBalancer
+  
