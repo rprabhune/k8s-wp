@@ -48,10 +48,6 @@ spec:
                   key: MYSQL_ROOT_PASSWORD
           ports:
             - containerPort: 3306
-          volumes:
-            - name: mysql-init-scripts
-              configMap:
-                name: mysql-init-scripts
       volumes:
         - name: mysql-init-scripts
           configMap:
